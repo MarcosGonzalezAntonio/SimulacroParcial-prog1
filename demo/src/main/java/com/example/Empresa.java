@@ -38,13 +38,14 @@ public class Empresa {
 
     
     // Actividad 4 
-    public static void empresa(String[] args) {
+    public static void main(String[] args) {
         Empresa miEmpresa = new Empresa();
 
-        Empleado[] listaEmpleados = new Empleado[2];
+        Empleado[] listaEmpleados = new Empleado[4];
         listaEmpleados[0]  = new Gerente("Leonel Messi", 80000.0, "Finanzas");
         listaEmpleados[1]  = new Desarrollador("Marcos Gonzalez", 55000.0, "Java");
-        
+        listaEmpleados[2] = new Empleado("Luis Paz", 30000.0);
+        listaEmpleados[3]  = new Desarrollador("Maria Sol", 60000.0, "Python");
         System.out.println("--- ANTES DE ORDENAR ---");
         for (Empleado emp : listaEmpleados) {
             miEmpresa.mostrarInformacion(emp);
